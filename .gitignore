@@ -1,0 +1,76 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc / OS files
+.DS_Store
+Thumbs.db
+*.pem
+
+# secrets & keys
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+*_rsa
+*.crt
+*.cert
+service-account*.json
+gcp-*.json
+aws-credentials
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code — definições locais e scaffolding interno, fora do repo público.
+.claude/
+CLAUDE.md
+
+# Supabase CLI local state (contém infra interna: project-ref, pooler-url, etc.)
+supabase/.temp/
+supabase/.branches/
+
+# logs, caches & temporários
+*.log
+logs/
+*.tmp
+.cache/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.local.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
